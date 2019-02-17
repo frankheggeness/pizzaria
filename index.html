@@ -5,36 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Best Pizza Ever</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Coiny|Pacifico|Quicksand|Lobster" rel="stylesheet">
 </head>
 <body>
+    <div class = "topnav">
+        <a href="#today">Today's Special</a>
+        <a href="#menu">Menu</a>
+        <a href="#subscribe">Subscribe</a>
+        <a href="#visit">Visit Us</a>
+    </div>
     <header id = "intro">
-        <div class= "conent">   
+        <div class= "content">   
             <h1 id="name">
                 Pizzaria La DevLeague
             </h1>
+           
             <h2 id= "tagLine">
                 Functional Pizza For All!
             </h2>
-            <img src="assets/pizzaMan.jpeg" alt="logo">
-            <nav id="topMenu">
-                <li class= "guide">
-                    <a href="#today">Today's Special</a>
-                </li>
-                <li class= "guide">
-                    <a href="#menu">Menu</a>
-                </li>
-                <li class= "guide">
-                    <a href="#subscribe">Subscribe</a>
-                </li>
-                <li class= "guide">
-                    <a href="#visit">Visit</a>
-                </li>
-                <li class = "guide"></li>
-            </nav>
+            <img src="assets/pizzaMan.jpeg" alt="logo" class= "logo">
         </div>
         <section id="today">
             <div class="content">
                 <h3 class="sectionTitle">Today's Special</h3>
+                <img src="https://www.conniespizza.com/wp-content/uploads/2017/02/Heart-Shaped-Pizza-2017-1-1024x1024.png" alt="special" class= "special">
                 <p id="special">Conditional Love</p>
             </div>
         </section>
@@ -46,11 +41,13 @@
                 <p class="pizzaName">Object of My Desire</p>
                 <p class="description">A programmers delight, this class has string cheese, an array of BBQ meats and 1 special sauce.</p>
                 <p class="price">19.99</p>
+                <img src="https://api-content.prod.pizzahutaustralia.com.au//umbraco/api/Image/Get2?path=assets/products/menu/Meat-Super-Supreme-Pizza-3250-menu.jpg" alt="Object of My Desire" class= "pizzapic">
             </div>
-            <divclass="pizza">
+            <div class="pizza">
                 <p class="pizzaName">Four Loop</p>
-                <p class="description">description: Spin your wheel with this quattro cheese mix doused in garlic and truffle oil. Loop there it is!</p>
+                <p class="description">Spin your wheel with this quattro cheese mix doused in garlic and truffle oil. Loop there it is!</p>
                 <p class="price">44.44</p>
+                <img src="http://oddmoes.com/wp-content/uploads/2017/07/pizza.jpg" alt="Four Loop" class= "pizzapic">
                     </div>
             <div class="pizza">
                 <p class="pizzaName">Conditional Love</p>
@@ -71,7 +68,7 @@
     </section>
     
     <section id="subscribe">
-        <div class="content">
+        <div class="centered">
             <h3 class="sectionTitle">Subscribe</h3>
             <p id="deal">Sign up for our special deals!</p>
             <input placeholder="First Name">
@@ -84,17 +81,16 @@
         <div class="content">
             <h3 class="sectionTitle">Visit</h3>
             <ul id="addy">
-                <li id="street">2800 Woodlawn Dr.<br>Honolulu, Hi 96822</li>
-                <li id="map">
-                    <a href="https://www.google.com/maps?ll=21.223782,-157.899628&z=13&t=m&hl=en&gl=US&mapclient=embed&cid=15585431400080676543 target=_blank">View Map</a>
-                </li>
-                <li class="hours">Monday - Saturday</li>
-                <li class="hours">12pm - 12am</li>
-                <li class="hours">Coding On Sundays</li>
+                <div id="street">2800 Woodlawn Dr.<br>Honolulu, Hi 96822</div>
+                <div id="map"><a href="https://www.google.com/maps?ll=21.223782,-157.899628&z=13&t=m&hl=en&gl=US&mapclient=embed&cid=15585431400080676543 target=_blank">View Map</a></div>
+                <div class="hours">Monday - Saturday</div>
+                <div class="hours">12pm- 12am</div>
+                <div class="hours">Coding On Sundays</div>
             </ul>
         </div>
     </section>
     
+
 
 </body>
 <footer>
